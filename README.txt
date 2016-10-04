@@ -25,14 +25,18 @@ install()
 # After installation one can reload the AKSmooth package.
 library(AKSmooth)
 
-# Example
-load("./data/bn1chr21.rda")
-data <- bn1chr21
+3. Example
+git clone 
+
+load("./data/bn1chr1.rda")
+data <- bn1chr1
 fitChr21gau <- AKSmooth(data, 30, "Gaussian")
 
-# For more details.
-?AKSmooth
+4. Update:
 
+1, Change the format of input as the classic bedgraph format
+2, Test the senstivity and Specificity
+3, Compared with HMM model
 
 
 
