@@ -6,31 +6,28 @@ Ajusted local kernel smoothing for low-coverage bisulfite sequencing data.
 
 1. INSTALL
 
-# Download and unzip this file, and run the following codes in R:
+# git clone from my github: https://github.com/Shicheng-Guo/AKSmooth.git
 
-install.packages("devtools") 
-library(devtools)
-
-# Find the directory where AKSmooth-master file is located and set the following new working directory.
-setwd("./AKSmooth-master") 
-
-# Load the package into memory
-load_all()
-
-# Install the package 
-install()
+cd /home/shg047/software/
+git clone https://github.com/Shicheng-Guo/AKSmooth.git
+cd /home/shg047/software/AKSmooth/R
 
 2. USAGE
 
 # After installation one can reload the AKSmooth package.
-library(AKSmooth)
+source(AKSmooth.R)
 
 3. Example
-git clone 
 
+cd /home/shg047/software/
+git clone https://github.com/Shicheng-Guo/AKSmooth.git
+cd /home/shg047/software/AKSmooth/R
+source(AKSmooth.R)
 load("./data/bn1chr1.rda")
 data <- bn1chr1
 fitChr21gau <- AKSmooth(data, 30, "Gaussian")
+
+Note: fitChr21gau is the fitted methylation levels
 
 4. Update:
 
